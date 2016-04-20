@@ -1,0 +1,101 @@
+
+$brunfond: #a3897a;
+.body-wrapper-index {
+  height: 100%;
+  background: url('../images/Nuages_arriere_plan.png') no-repeat center;
+  background-color: $brunfond;
+
+.etoiles {
+  position: absolute;
+  top: 247px;
+  left: 0;
+  height: 334px;
+  width: 100%;
+  background: url("../images/etoiles.png") no-repeat center;
+}
+.etoiles_brille {
+  position: absolute;
+  top: 247px;
+  left: 0;
+  height: 334px;
+  width: 100%;
+  background: url("../images/etoiles_brille.png") no-repeat center;
+}
+.defis_du_pro_nuage {
+  float: left;
+  height: 259px;
+  width: 100%;
+  background: url("../images/Les_defis_du_professeur_gros_nuages.png") no-repeat center;
+}
+.bull {
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px auto auto;
+  width: 473px;
+  height: 275px;
+  background: url('../images/Bulle.png') no-repeat center;
+}
+.logos{
+  display: inline-block;
+  margin: 20px auto auto;
+  width: 344px;
+  height: 87px;
+  background: url('../images/logos.png') no-repeat center;
+}
+.professeur {
+  margin: 80px auto auto;
+  width: 210px;
+  height: 337px;
+  background: url('../images/Professeur.png') no-repeat center;
+  position: relative;
+}
+.livre {
+  margin: auto;
+  height: 119px;
+  background: url('../images/Livre_bleu.png') no-repeat center;
+}
+.btnmenu {
+  margin-top: 45px;
+  font-size: 1.1em;
+  font-family: "arial";
+  font-weight: bold;
+  color: white;
+  outline: none;
+  .new {
+    position: relative;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    top:0px;
+    width: 242px;
+    background-color: #66c1cb;
+    box-shadow: 0 6px 0 0 #4d9299;
+    transition: all ease 0.1s;
+    &:active:focus{
+      box-shadow: 0 3px 0 #4d9299;
+      top:3px;
+    }
+  }
+  .repr {
+    position: relative;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    top:0px;
+    width: 242px;
+    background-color: #69d399;
+    box-shadow: 0 6px 0 0 #509f71;
+    transition: all ease 0.1s;
+    &:active:focus{
+      box-shadow: 0 3px 0 #509f71;
+      top:3px;
+    }
+  }
+}
+}

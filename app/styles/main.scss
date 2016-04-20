@@ -1,0 +1,79 @@
+// bower:scss
+// endbower
+.content-wrapper,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+@import "_fonts.scss";
+@import "accueil.scss";
+@import "_animations.scss";
+@import "dialog.scss";
+.body-wrapper-frise {
+  height: 100%;
+  background-color: #e9ecee;
+  padding-right: 0;
+  padding-left: 0;
+  .nav-wrapper {
+    height: 116px;
+    background-color: white;
+    box-shadow: 0 6px 15px 0 #656565;
+    .nav {
+      height: 207px;
+      width: 100%;
+      background: url("../images/Nav.png") no-repeat center;
+      h1 {
+        font-family: BukhariScript-Regular;
+        font-size: 2.35em;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+      }
+    }
+  }
+  .frise-wrapper {
+    margin-top: 80px;
+    .periode-top {
+      .antiquite {
+        margin-left: 389px;
+      }
+      .tempmoderne {
+        margin-left: 150px;
+      }
+    }
+    .frise {
+      width: 100%;
+      height: 50px;
+      background: url("../images/Frise.png") no-repeat center;
+    }
+    .periode-bottom {
+      .prehistoire {
+        margin-left: 248px;
+      }
+      .moyenage {
+        margin-left: 137px;
+      }
+      .tempcontemporain {
+        margin-left: 150px;
+      }
+    }
+  }
+  .personnages-wrapper {
+    div {
+      display: inline-block;
+    }
+    .professeur {
+      width: 210px;
+      height: 337px;
+      background: url('../images/Professeur.png') no-repeat center;
+    }
+    .enfants {
+      float: right;
+      width: 300px;
+      height: 337px;
+      background: url('../images/enfants.png') no-repeat center;
+    }
+  }
+}

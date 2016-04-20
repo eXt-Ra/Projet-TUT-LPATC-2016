@@ -1,0 +1,64 @@
+@keyframes twink {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  50%{
+      opacity: 0.3;
+      display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+@keyframes twink-rev {
+  0% {
+    opacity: 0.3;
+    display: none;
+  }
+  50%{
+      opacity: 1;
+      display: block;;
+  }
+  100% {
+    opacity: 0.3;
+    display: none;
+  }
+}
+
+@keyframes cloud-bob {
+	0% {
+		transform: translateY(-10px);
+	}
+	50% {
+		transform:  translateY(-6px);
+	}
+	100% {
+		transform:  translateY(-10px);
+	}
+}
+
+@keyframes cloud {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  50%{
+      opacity: 0.5;
+      display: none;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+.etoiles {
+  animation: twink-rev 5s ease-out infinite;
+}
+.etoiles_brille {
+  animation: twink 5s ease-out infinite;
+}
+.defis_du_pro_nuage{
+  animation: cloud-bob 3s ease infinite;
+}
