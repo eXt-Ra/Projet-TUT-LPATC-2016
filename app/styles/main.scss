@@ -36,11 +36,26 @@ html {
   .frise-wrapper {
     margin-top: 80px;
     .periode-top {
+      display: inline-flex;
       .antiquite {
+        width: 152px;
+        height: 152px;
         margin-left: 389px;
+        background: url("../images/Antiquite.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          background: url("../images/Antiquite_hover.png") no-repeat center;
+        }
       }
       .tempmoderne {
+        width: 152px;
+        height: 152px;
         margin-left: 150px;
+        background: url("../images/Temps_moderne.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          background: url("../images/Temps_moderne_hover.png") no-repeat center;
+        }
       }
     }
     .frise {
@@ -49,14 +64,37 @@ html {
       background: url("../images/Frise.png") no-repeat center;
     }
     .periode-bottom {
+      display: inline-flex;
       .prehistoire {
+        width: 152px;
+        height: 152px;
         margin-left: 248px;
+        background: url("../images/Prehistoire.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          z-index: 5;
+          background: url("../images/Prehistoire_hover.png") no-repeat center;
+        }
       }
       .moyenage {
+        width: 152px;
+        height: 152px;
         margin-left: 137px;
+        background: url("../images/Moyen_age.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          background: url("../images/Moyen_age_hover.png") no-repeat center;
+        }
       }
       .tempcontemporain {
+        width: 152px;
+        height: 152px;
         margin-left: 150px;
+        background: url("../images/Temps_contemporain.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          background: url("../images/Temps_contemporain_hover.png") no-repeat center;
+        }
       }
     }
   }
@@ -68,6 +106,12 @@ html {
       width: 210px;
       height: 337px;
       background: url('../images/Professeur.png') no-repeat center;
+    }
+    .explimarie{
+      float: right;
+      width: 239px;
+      height: 337px;
+      background: url('../images/explication_marie_frise.png') no-repeat center;
     }
     .enfants {
       float: right;
