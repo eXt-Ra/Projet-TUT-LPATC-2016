@@ -1,23 +1,33 @@
 <section class="container-fluid body-wrapper-frise">
-  <section class="nav-wrapper">
-    <div class="container nav">
-    </div>
-  </section>
   <section class="container frise-wrapper">
     <div class="periode-top">
-      <a href="#"><div class="antiquite"></div></a>
-      <a href="#"><div class="tempmoderne"></div></a>
+      <a href="">
+        <div class="antiquite"></div>
+      </a>
+      <a href="#/tempsmoderne">
+        <div class="tempmoderne"></div>
+      </a>
     </div>
     <div class="frise"></div>
     <div class="periode-bottom">
-      <a href="#"><div class="prehistoire"></div></a>
-      <a href="#"><div class="moyenage"></div></a>
-      <a href="#"><div class="tempcontemporain"></div></a>
+      <a href="">
+        <div class="prehistoire"></div>
+      </a>
+      <a href="">
+        <div class="moyenage"></div>
+      </a>
+      <a href="">
+        <div class="tempcontemporain"></div>
+      </a>
     </div>
   </section>
   <section class="container personnages-wrapper">
     <div class="professeur"></div>
     <div class="enfants"></div>
-    <div class="explimarie"></div>
+    <div class="explimarie text-center">
+      <p>
+        Bonjour,<br> {{ currentUser.name }} !
+      </p>
+    </div>
   </section>
 </section>

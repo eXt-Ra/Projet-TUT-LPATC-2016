@@ -9,9 +9,5 @@
  */
 angular.module('projtutlpatc2016App')
   .controller('FriseCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
   });

@@ -1,7 +1,7 @@
 <section class="dialog-wrapper">
   <h4>Tu n’as jamais joué avec le professeur Histein, Marie et Hugo ?</h4>
   <h3>Alors inscris-toi pour une aventure palpitante !</h3>
-  <form name="loginForm" ng-submit="$valid && login(credentials)" novalidate>
+  <form name="loginForm" ng-submit="loginForm.$valid && login(credentials)" novalidate>
     <md-input-container class="col-md-12">
       <label>Ton Nom</label>
       <input ng-model="credentials.User_name" required>

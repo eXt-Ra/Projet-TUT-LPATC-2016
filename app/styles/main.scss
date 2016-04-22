@@ -1,123 +1,114 @@
 // bower:scss
+@import "bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
 .content-wrapper,
 body,
 html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 @import "_fonts.scss";
 @import "accueil.scss";
 @import "_animations.scss";
 @import "dialog.scss";
-.body-wrapper-frise {
+@import "frise.scss";
+.nav-wrapper {
+  display: none;
+  height: 116px;
+  background-color: white;
+  box-shadow: 0 6px 15px 0 #656565;
+  position: inherit;
+  .nav {
+    height: 207px;
+    width: 100%;
+    background: url("../images/Nav.png") no-repeat center;
+    h1 {
+      font-family: BukhariScript-Regular;
+      font-size: 2.35em;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 35px;
+    }
+  }
+}
+.body-wrapper-tempsmodernes {
   height: 100%;
   background-color: #e9ecee;
-  padding-right: 0;
-  padding-left: 0;
-  .nav-wrapper {
-    height: 116px;
-    background-color: white;
-    box-shadow: 0 6px 15px 0 #656565;
-    .nav {
-      height: 207px;
-      width: 100%;
-      background: url("../images/Nav.png") no-repeat center;
-      h1 {
-        font-family: BukhariScript-Regular;
-        font-size: 2.35em;
-        width: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 35px;
-      }
-    }
-  }
-  .frise-wrapper {
-    margin-top: 80px;
-    .periode-top {
-      display: inline-flex;
-      .antiquite {
-        width: 152px;
-        height: 152px;
-        margin-left: 389px;
-        background: url("../images/Antiquite.png") no-repeat center;
-        transition: all 0.2s;
-        &:hover {
-          background: url("../images/Antiquite_hover.png") no-repeat center;
+  .rubrique-wrapper {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    .rowback {
+      margin-left: 200px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      .back {
+        position: relative;
+        outline: none;
+        border: 0;
+        border-radius: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 0;
+        top: 0;
+        font-family: Arial;
+        font-weight: bold;
+        color: white;
+        background-color: #cd0039;
+        box-shadow: 0 6px 0 0 #9c002d;
+        transition: all ease 0.1s;
+        padding-right: 15px;
+        &:active:focus {
+          box-shadow: 0 3px 0 #9c002d;
+          top: 3px;
         }
-      }
-      .tempmoderne {
-        width: 152px;
-        height: 152px;
-        margin-left: 150px;
-        background: url("../images/Temps_moderne.png") no-repeat center;
-        transition: all 0.2s;
-        &:hover {
-          background: url("../images/Temps_moderne_hover.png") no-repeat center;
+        img {
+          padding-left: 5px;
+          padding-right: 10px;
+          background: none;
+          box-shadow: none;
         }
       }
     }
-    .frise {
-      width: 100%;
-      height: 50px;
-      background: url("../images/Frise.png") no-repeat center;
-    }
-    .periode-bottom {
-      display: inline-flex;
-      .prehistoire {
-        width: 152px;
-        height: 152px;
-        margin-left: 248px;
-        background: url("../images/Prehistoire.png") no-repeat center;
+    .row {
+      .leonard {
+        height: 325px;
+        width: 219px;
+        background: url("../images/ATELIER_LEONARD.png") no-repeat center;
         transition: all 0.2s;
         &:hover {
-          z-index: 5;
-          background: url("../images/Prehistoire_hover.png") no-repeat center;
+          @include transform(scale(1.1));
         }
       }
-      .moyenage {
-        width: 152px;
-        height: 152px;
-        margin-left: 137px;
-        background: url("../images/Moyen_age.png") no-repeat center;
+      .explorateur {
+        height: 325px;
+        width: 219px;
+        background: url("../images/BATEAU_DES_EXPLORATEURS.png") no-repeat center;
         transition: all 0.2s;
         &:hover {
-          background: url("../images/Moyen_age_hover.png") no-repeat center;
+          @include transform(scale(1.1));
         }
       }
-      .tempcontemporain {
-        width: 152px;
-        height: 152px;
-        margin-left: 150px;
-        background: url("../images/Temps_contemporain.png") no-repeat center;
+      .inventeur {
+        height: 325px;
+        width: 219px;
+        background: url("../images/LA_RUE_DES_INVENTEURS.png") no-repeat center;
         transition: all 0.2s;
         &:hover {
-          background: url("../images/Temps_contemporain_hover.png") no-repeat center;
+          @include transform(scale(1.1));
         }
       }
-    }
-  }
-  .personnages-wrapper {
-    div {
-      display: inline-block;
-    }
-    .professeur {
-      width: 210px;
-      height: 337px;
-      background: url('../images/Professeur.png') no-repeat center;
-    }
-    .explimarie{
-      float: right;
-      width: 239px;
-      height: 337px;
-      background: url('../images/explication_marie_frise.png') no-repeat center;
-    }
-    .enfants {
-      float: right;
-      width: 300px;
-      height: 337px;
-      background: url('../images/enfants.png') no-repeat center;
+      .louisxiv {
+        height: 325px;
+        width: 219px;
+        background: url("../images/LE_CHATEAU_DE_LOUIS_XIV.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          @include transform(scale(1.1));
+        }
+      }
     }
   }
 }

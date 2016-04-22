@@ -17,11 +17,13 @@ angular.module('projtutlpatc2016App')
     };
 
     $scope.login = function(credentials) {
+      console.log(credentials);
       authService.login(credentials).then(function(username) {
         $rootScope.$broadcast(AUTHEVENTS.loginSuccess);
         setUser(username);
         $mdDialog.hide();
         $location.path("/frise");
+        $(".nav-wrapper").fadeIn("slow");
       }, function() {
         $rootScope.$broadcast(AUTHEVENTS.loginFailed);
       });

@@ -24,6 +24,9 @@ angular
         templateUrl: 'views/frise.html',
         controller: 'FriseCtrl',
       })
+      .when('/tempsmoderne', {
+        templateUrl: 'views/temps-modernes.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
