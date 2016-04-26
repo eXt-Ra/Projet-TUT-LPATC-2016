@@ -23,7 +23,6 @@ angular.module('projtutlpatc2016App')
         setUser(username);
         $mdDialog.hide();
         $location.path("/frise");
-        $(".nav-wrapper").fadeIn("slow");
       }, function() {
         $rootScope.$broadcast(AUTHEVENTS.loginFailed);
       });

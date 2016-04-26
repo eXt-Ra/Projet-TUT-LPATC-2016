@@ -12,7 +12,8 @@ angular
   .module('projtutlpatc2016App', [
     'ngAnimate',
     'ngRoute',
-    'ngMaterial'
+    'ngMaterial',
+    'btford.socket-io'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -26,6 +27,9 @@ angular
       })
       .when('/tempsmoderne', {
         templateUrl: 'views/temps-modernes.html'
+      })
+      .when('/ruedesinventeurs', {
+        templateUrl: 'views/ruedesinventeurs.html'
       })
       .otherwise({
         redirectTo: '/'

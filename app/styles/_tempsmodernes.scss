@@ -1,0 +1,79 @@
+
+.body-wrapper-tempsmodernes {
+  height: 100%;
+  background-color: #e9ecee;
+  .rubrique-wrapper {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    .row {
+      .leonard {
+        height: 325px;
+        width: 219px;
+        background: url("../images/ATELIER_LEONARD.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          @include transform(scale(1.1));
+        }
+      }
+      .explorateur {
+        height: 325px;
+        width: 219px;
+        background: url("../images/BATEAU_DES_EXPLORATEURS.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          @include transform(scale(1.1));
+        }
+      }
+      .inventeur {
+        height: 325px;
+        width: 219px;
+        background: url("../images/LA_RUE_DES_INVENTEURS.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          @include transform(scale(1.1));
+        }
+      }
+      .louisxiv {
+        height: 325px;
+        width: 219px;
+        background: url("../images/LE_CHATEAU_DE_LOUIS_XIV.png") no-repeat center;
+        transition: all 0.2s;
+        &:hover {
+          @include transform(scale(1.1));
+        }
+      }
+    }
+  }
+}
+.rowback {
+  margin-left: 200px;
+  margin-bottom: 25px;
+  .back {
+    position: relative;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    top: 0;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    background-color: #cd0039;
+    box-shadow: 0 6px 0 0 #9c002d;
+    transition: all ease 0.1s;
+    padding-right: 15px;
+    &:active:focus {
+      box-shadow: 0 3px 0 #9c002d;
+      top: 3px;
+    }
+    img {
+      padding-left: 5px;
+      padding-right: 10px;
+      background: none;
+      box-shadow: none;
+    }
+  }
+}

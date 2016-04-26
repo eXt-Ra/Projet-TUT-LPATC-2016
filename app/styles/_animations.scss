@@ -37,6 +37,25 @@
     transform: translateY(-10px);
   }
 }
+@keyframes voiture-move {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+@keyframes cloud-bob-light {
+  0% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
 @keyframes cloud {
   0% {
     opacity: 1;
@@ -54,7 +73,7 @@
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -50%, 0);
   }
   to {
     opacity: 1;
@@ -64,7 +83,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50%, 0);
   }
   to {
     opacity: 1;
@@ -102,6 +121,17 @@
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes vapeur {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 .etoiles {
   @include animation(twink-rev 3.0s ease-out infinite);
 }
@@ -112,13 +142,34 @@
   @include animation(cloud-bob 3.0s ease infinite);
 }
 //frise entrance
-.prehistoire,.moyenage,.tempcontemporain {
+.moyenage,
+.prehistoire,
+.tempcontemporain {
   @include animation(fadeInUp 0.5s ease);
 }
-.tempmoderne,.antiquite,.leonard,.explorateur,.inventeur,.louisxiv {
+.antiquite,
+.explorateur,
+.inventeur,
+.leonard,
+.louisxiv,
+.tempmoderne {
   @include animation(fadeInDown 0.5s ease);
 }
 .explimarie {
   @include animation(bounceIn 0.5s ease);
   @include animation-delay(0.8s);
+}
+//rue des inventeurs
+.rue-wrapper{
+    @include animation(fadeInDown 0.5s ease);
+}
+#nuages {
+  @include animation(cloud-bob-light 3.0s ease infinite);
+}
+#Nuage_1_,#txtUsine {
+  transform-origin: bottom;
+  @include animation(vapeur 3.0s ease infinite);
+}
+#voiture {
+  @include animation(voiture-move 15.0s infinite);
 }

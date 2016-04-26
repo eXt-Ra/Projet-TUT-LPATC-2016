@@ -71,6 +71,14 @@
   }
 }
 .personnages-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom:55px;
+  .personnage-sub-wrapper{
+    position: relative;
+    left: -50%;
+    width: 1100px;
+  }
   div {
     display: inline-block;
   }

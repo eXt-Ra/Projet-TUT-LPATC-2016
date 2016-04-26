@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/hover/css/hover.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -17,9 +18,9 @@
     <!-- endbuild -->
   </head>
   <body ng-controller="ApplicationcontrollerCtrl">
-    <section class="container-fluid nav-wrapper">
-      <div class="container nav">
-        <h1>La frise du temps</h1>
+    <section class="container-fluid nav-wrapper" ng-class="navbarClass">
+      <div class="container nav text-center">
+        <h1>{{mainTitle}}</h1>
       </div>
     </section>
     <ng-view onload="">
@@ -43,6 +44,7 @@
     </script>
 
     <!-- build:js(.) scripts/vendor.js -->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -52,6 +54,7 @@
     <script src="bower_components/angular-aria/angular-aria.js"></script>
     <script src="bower_components/angular-messages/angular-messages.js"></script>
     <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-socket-io/socket.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -66,6 +69,7 @@
     <script src="scripts/services/userroles.js"></script>
     <script src="scripts/services/session.js"></script>
     <script src="scripts/controllers/applicationcontroller.js"></script>
+    <script src="scripts/services/websocket.js"></script>
     <!-- endbuild -->
   </body>
 </html>
