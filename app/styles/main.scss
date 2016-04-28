@@ -1,6 +1,5 @@
 // bower:scss
-@import "bourbon/app/assets/stylesheets/_bourbon.scss";
-// endbower
+@import "bourbon/app/assets/stylesheets/_bourbon.scss"; // endbower
 .content-wrapper,
 body,
 html {
@@ -14,7 +13,6 @@ html {
 @import "dialog.scss";
 @import "frise.scss";
 @import "tempsmodernes.scss";
-
 .nav-wrapper {
   display: block;
   height: 116px;
@@ -33,22 +31,64 @@ html {
       margin-top: 35px;
     }
   }
-  &.disabled-nav{
+  &.disabled-nav {
     display: none;
   }
 }
-
 //Rue des inventerurs
-.body-wrapper-ruedesinventeurs{
+.body-wrapper-ruedesinventeurs {
   height: 100vh;
   background-color: #dddad6;
-  .rue-wrapper{
+  .rue-wrapper {
     margin-top: 40px;
-
-    #Nuage_1_,#txtUsine{
-      &:hover{
+    #Nuage_1_,
+    #txtUsine {
+      &:hover {
         cursor: pointer;
       }
     }
+    #imprimerie{
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    #bibliotheque{
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+//Usine à vapeur
+.usinevapeur-slider-wrapper {
+  margin-top: 25px;
+  width: 946px;
+  .carousel-control{
+    width: 7%;
+    &.right{
+      width:15%;
+    }
+  }
+  .glyphicon-chevron-left:before {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  .glyphicon-chevron-right:before {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px;
+  }
+}
+
+.expliprof{
+  float: left;
+  width: 239px;
+  height: 337px;
+  background: url('../images/Bulle_prof.png') no-repeat center;
+  p {
+    margin-top: 35px;
+    font-family: BukhariScript-Regular;
+    font-size: 1.2em;
   }
 }

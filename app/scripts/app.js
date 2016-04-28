@@ -29,7 +29,14 @@ angular
         templateUrl: 'views/temps-modernes.html'
       })
       .when('/ruedesinventeurs', {
-        templateUrl: 'views/ruedesinventeurs.html'
+        templateUrl: 'views/ruedesinventeurs.html',
+          controller: 'RuedesinventeursCtrl',
+      })
+      .when('/usinevapeur', {
+        templateUrl: 'views/usinevapeur.html'
+      })
+      .when('/imprimerie', {
+        templateUrl: 'views/imprimerie.html'
       })
       .otherwise({
         redirectTo: '/'
