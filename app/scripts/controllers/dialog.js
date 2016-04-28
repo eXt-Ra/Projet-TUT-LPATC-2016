@@ -17,7 +17,6 @@ angular.module('projtutlpatc2016App')
     };
 
     $scope.login = function(credentials) {
-      console.log(credentials);
       authService.login(credentials).then(function(username) {
         $rootScope.$broadcast(AUTHEVENTS.loginSuccess);
         setUser(username);

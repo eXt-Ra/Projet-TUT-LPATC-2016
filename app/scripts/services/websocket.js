@@ -9,6 +9,6 @@
  */
 angular.module('projtutlpatc2016App')
   .factory('websocket', function (socketFactory) {
-    //return socketFactory();
+    return socketFactory();
     return true;
   });

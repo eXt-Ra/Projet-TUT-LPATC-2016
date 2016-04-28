@@ -18,14 +18,19 @@ angular.module('projtutlpatc2016App')
     $scope.navbarClass;
     $scope.setCurrentUser = function(user) {
       $scope.currentUser.name = user;
+      websocket.emit('newcon', user);
     };
 
+    websocket.forward('newconS', $scope);
+     console.log("An other person is connected");
+     $scope.$on('websocket:newconS', function () {
+       console.log("An other person is connected");
+     });
 
     $scope.$on('$locationChangeSuccess', function(event) {
       switch ($location.path()) {
         case "/":
             $scope.navbarClass = "disabled-nav";
-
         break;
         case "/tempsmoderne":
             $scope.mainTitle = "Les temps modernes";
