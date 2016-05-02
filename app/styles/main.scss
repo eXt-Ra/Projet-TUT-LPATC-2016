@@ -61,6 +61,11 @@ html {
   }
 }
 //Usine à vapeur
+
+.usinevapeur-wrapper{
+  height: 100vh;
+  background-color: #dddad6;
+}
 .usinevapeur-slider-wrapper {
   margin-top: 25px;
   width: 946px;
@@ -91,5 +96,13 @@ html {
     margin-top: 35px;
     font-family: BukhariScript-Regular;
     font-size: 1.2em;
+  }
+}
+.sliderend{
+  margin-bottom: 45px;
+  a{
+    color: white;
+    font-family: BukhariScript-Regular;
+    font-size: 2.35em;
   }
 }

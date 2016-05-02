@@ -121,6 +121,40 @@
     transform: scale3d(1, 1, 1);
   }
 }
+
+@keyframes bounceInandFade {
+  20%,
+  40%,
+  60%,
+  80%,
+  from,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale3d(.3, .3, .3);
+  }
+  10% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  //  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    //transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    //transform: scale3d(.97, .97, .97);
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    //transform: scale3d(1, 1, 1);
+  }
+}
 @keyframes vapeur {
   from {
     transform: scale3d(1, 1, 1);
@@ -155,12 +189,17 @@
 .tempmoderne {
   @include animation(fadeInDown 0.5s ease);
 }
-.explimarie,.expliprof {
+.explimarie {
   @include animation(bounceIn 0.5s ease);
   @include animation-delay(0.8s);
 }
+
+.expliprof {
+  visibility: hidden;
+  @include animation(bounceInandFade 4s ease);
+}
 //rue des inventeurs
-.rue-wrapper{
+.rue-wrapper,.usinevapeur-slider-wrapper{
     @include animation(fadeInDown 0.5s ease);
 }
 #nuages {

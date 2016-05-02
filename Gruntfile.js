@@ -77,20 +77,18 @@ module.exports = function(grunt) {
         onCreateServer: function(server, connect, options) {
           var io = require('socket.io').listen(server);
           // do something with socket
-          io.sockets.on('connection', function(socket) {
-            console.log('a user connected'+socket.id);
-             socket.on('disconnect', function() {
-                console.log('Got disconnect!');
-             });
 
-             socket.on('newcon', function(data) {
-               console.log(data);
-               socket.emit('newconS', 'Un autre client vient de se connecter !');
-             });
+          io.on('connection', function(socket) {
+            console.log('a user connected' + socket.id);
+            socket.on('disconnect', function() {
+              console.log('Got disconnect!');
+            });
 
-          });
-
-          console.log("Hello socket io :)");
+            socket.on('newcon', function(data) {
+              console.log(data);
+              socket.broadcast.emit('newconS',data);
+            });
+          });          
         }
       },
       livereload: {

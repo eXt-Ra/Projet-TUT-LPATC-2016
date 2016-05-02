@@ -9,13 +9,18 @@
  */
 angular.module('projtutlpatc2016App')
   .controller('RuedesinventeursCtrl', function ($scope, $location) {
-    $scope.openUsine = function () {
-      $location.url("/usinevapeur");
-    }
-    $scope.openImprim = function () {
-      $location.url("/imprimerie");
-    }
-    $scope.openBiblio = function () {
-      $location.url("/bibliotheque");
-    }
+
+    // $scope.openUsine = function () {
+    //   $location.url("/usinevapeur");
+    //   $scope.UsineDone = true;
+    // }
+    // $scope.openImprim = function () {
+    //   $location.url("/imprimerie");
+    //   $scope.ImprimDone = true;
+    // }
+    // $scope.openBiblio = function () {
+    //   $location.url("/bibliotheque");
+    //   $scope.BiblioDone = true;
+    // }
+
   });

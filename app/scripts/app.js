@@ -38,6 +38,9 @@ angular
       .when('/imprimerie', {
         templateUrl: 'views/imprimerie.html'
       })
+      .when('/bibliotheque', {
+        templateUrl: 'views/bibliotheque.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

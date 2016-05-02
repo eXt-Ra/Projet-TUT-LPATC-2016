@@ -14,6 +14,44 @@ angular.module('projtutlpatc2016App')
     $scope.isAuthorized = authService.isAuthorized;
     $scope.currentUser.name = "Admin";
 
+    $scope.UsineDone = false;
+    $scope.ImprimDone = false;
+    $scope.BiblioDone = false;
+
+    if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
+      $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+    }else {
+      $scope.msgEnfant = "Choisi un atelier !"
+    }
+
+    $scope.openUsine = function () {
+      $location.url("/usinevapeur");
+      $scope.UsineDone = true;
+      if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
+        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+      }else {
+        $scope.msgEnfant = "Choisi un atelier !"
+      }
+    }
+    $scope.openImprim = function () {
+      $location.url("/imprimerie");
+      $scope.ImprimDone = true;
+      if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
+        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+      }else {
+        $scope.msgEnfant = "Choisi un atelier !"
+      }
+    }
+    $scope.openBiblio = function () {
+      $location.url("/bibliotheque");
+      $scope.BiblioDone = true;
+      if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
+        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+      }else {
+        $scope.msgEnfant = "Choisi un atelier !"
+      }
+    }
+
     //class
     $scope.navbarClass;
     $scope.setCurrentUser = function(user) {
