@@ -1,0 +1,28 @@
+<section class="container-fluid quizz-wrapper">
+  <section class="container quizz-box-wrapper text-center">
+    <h2>Qui a découvert l'imprimerie ?</h2>
+    <div class="text-center">
+      <button class="prop" ng-class="{'active': isActive}" ng-click="activeButton()" type="submit" name="button">Gutenberg</button>
+      <button class="prop" ng-class="{'false': isFalse}" ng-click="FalseButton()" type="submit" name="button">James Watt</button>
+      <button class="prop" ng-class="{'false': isFalseB}" ng-click="FalseButtonB()" type="submit" name="button">Léonard de Vinci</button>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- <button class="back" type="submit" name="button"><img class="back" src="images/back.png" alt=""/>Je retente ma chance</button> -->
+      </div>
+      <div class="col-md-6">
+        <button class="next" type="submit" name="button"><span>Question suivante</span><img src="images/arrow_right.png" alt="" /></button>
+      </div>
+    </div>
+  </section>
+  <section class="container personnages-wrapper">
+    <div class="personnage-sub-wrapper">
+      <div class="professeur"></div>
+      <div class="expliquizz text-center">
+        <p>
+          {{msgProf}}
+        </p>
+      </div>
+    </div>
+  </section>
+</section>

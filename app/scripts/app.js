@@ -41,6 +41,10 @@ angular
       .when('/bibliotheque', {
         templateUrl: 'views/bibliotheque.html'
       })
+      .when('/ruedesinventeurs/quizz', {
+        templateUrl: 'views/quizz.html',
+        controller : 'QuizzCtrl',
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -6,27 +6,6 @@
     font-weight: normal;
     font-size: 2em;
   }
-  .start {
-    outline: none;
-    border: 0;
-    border-radius: 5px;
-    font-family: 'coolveticaregular';
-    font-weight: normal;
-    font-size: 1.7em;
-    color: white;
-    padding-left: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 33px;
-    background: linear-gradient( #148bde, #1174b9);
-    &:active {
-      box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
-    }
-    .fusee {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
   .back {
     position: relative;
     outline: none;
@@ -64,4 +43,25 @@
   width: 300px;
   height: 337px;
   background: url('../images/enfants.png') no-repeat center;
+}
+.start {
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'coolveticaregular';
+  font-weight: normal;
+  font-size: 1.7em;
+  color: white;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 33px;
+  background: linear-gradient( #148bde, #1174b9);
+  &:active {
+    box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+  }
+  .fusee {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

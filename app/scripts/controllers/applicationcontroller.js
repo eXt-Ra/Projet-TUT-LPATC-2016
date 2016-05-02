@@ -19,36 +19,36 @@ angular.module('projtutlpatc2016App')
     $scope.BiblioDone = false;
 
     if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
-      $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+      $scope.quizzV = true;
     }else {
-      $scope.msgEnfant = "Choisi un atelier !"
+      $scope.quizzV = false;
     }
 
     $scope.openUsine = function () {
       $location.url("/usinevapeur");
       $scope.UsineDone = true;
       if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
-        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+        $scope.quizzV = true;
       }else {
-        $scope.msgEnfant = "Choisi un atelier !"
+        $scope.quizzV = false;
       }
     }
     $scope.openImprim = function () {
       $location.url("/imprimerie");
       $scope.ImprimDone = true;
       if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
-        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+        $scope.quizzV = true;
       }else {
-        $scope.msgEnfant = "Choisi un atelier !"
+        $scope.quizzV = false;
       }
     }
     $scope.openBiblio = function () {
       $location.url("/bibliotheque");
       $scope.BiblioDone = true;
       if ($scope.UsineDone && $scope.ImprimDone && $scope.BiblioDone) {
-        $scope.msgEnfant = "Clique ici, pour commencer le quizz";
+        $scope.quizzV = true;
       }else {
-        $scope.msgEnfant = "Choisi un atelier !"
+        $scope.quizzV = false;
       }
     }
 

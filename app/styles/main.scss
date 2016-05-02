@@ -1,6 +1,5 @@
 // bower:scss
-@import "bourbon/app/assets/stylesheets/_bourbon.scss";
-// endbower
+@import "bourbon/app/assets/stylesheets/_bourbon.scss"; // endbower
 .content-wrapper,
 body,
 html {
@@ -40,6 +39,11 @@ html {
 .body-wrapper-ruedesinventeurs {
   height: 100vh;
   background-color: #dddad6;
+  .start {
+    position: absolute;
+    bottom: 23px;
+    left: 340px;
+  }
   .rue-wrapper {
     margin-top: 40px;
     #Nuage_1_,
@@ -48,12 +52,12 @@ html {
         cursor: pointer;
       }
     }
-    #imprimerie{
+    #imprimerie {
       &:hover {
         cursor: pointer;
       }
     }
-    #bibliotheque{
+    #bibliotheque {
       &:hover {
         cursor: pointer;
       }
@@ -61,18 +65,17 @@ html {
   }
 }
 //Usine à vapeur
-
-.usinevapeur-wrapper{
+.usinevapeur-wrapper {
   height: 100vh;
   background-color: #dddad6;
 }
 .usinevapeur-slider-wrapper {
   margin-top: 25px;
   width: 946px;
-  .carousel-control{
+  .carousel-control {
     width: 7%;
-    &.right{
-      width:15%;
+    &.right {
+      width: 15%;
     }
   }
   .glyphicon-chevron-left:before {
@@ -86,8 +89,7 @@ html {
     padding: 15px;
   }
 }
-
-.expliprof{
+.expliprof {
   float: left;
   width: 239px;
   height: 337px;
@@ -98,11 +100,121 @@ html {
     font-size: 1.2em;
   }
 }
-.sliderend{
+.expliquizz {
+  float: left;
+  width: 239px;
+  height: 337px;
+  background: url('../images/Bulle_prof.png') no-repeat center;
+  p {
+    margin-top: 55px;
+    font-family: BukhariScript-Regular;
+    font-size: 1.2em;
+  }
+}
+.sliderend {
   margin-bottom: 45px;
-  a{
+  a {
     color: white;
     font-family: BukhariScript-Regular;
     font-size: 2.35em;
+  }
+}
+
+//Quizz
+.quizz-wrapper{
+  height: 100vh;
+  background-color: #b0d9ff;
+  .quizz-box-wrapper{
+    border-radius: 7px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 50px;
+    width: 600px;
+    h2{
+      font-family: coolveticaregular;
+      font-size: 2.35em;
+      margin-bottom: 20px;
+    }
+    .back{
+      position: relative;
+      outline: none;
+      border: 0;
+      border-radius: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border: 0;
+      top: 0;
+      font-family: Arial;
+      font-weight: bold;
+      color: white;
+      background-color: #cd0039;
+      box-shadow: 0 6px 0 0 #9c002d;
+      transition: all ease 0.1s;
+      padding-right: 15px;
+      &:active:focus {
+        box-shadow: 0 3px 0 #9c002d;
+        top: 3px;
+      }
+      img {
+        padding-left: 5px;
+        padding-right: 10px;
+        background: none;
+        box-shadow: none;
+      }
+    }
+    .next{
+      position: relative;
+      outline: none;
+      border: 0;
+      border-radius: 50px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 10px;
+      border: 0;
+      top: 0;
+      font-family: Arial;
+      font-weight: bold;
+      color: white;
+      background-color: #00b3cd;
+      box-shadow: 0 6px 0 0 #00889a;
+      transition: all ease 0.1s;
+      padding-right: 15px;
+      &:active:focus {
+        box-shadow: 0 3px 0 #00889a;
+        top: 3px;
+      }
+      img {
+        padding-left: 5px;
+        padding-right: 10px;
+        background: none;
+        box-shadow: none;
+      }
+    }
+    .prop{
+      width: 60%;
+      outline: none;
+      border: 0;
+      border-radius: 5px;
+      font-family: 'coolveticaregular';
+      font-weight: normal;
+      font-size: 1.7em;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      margin-bottom: 25px;
+      background: linear-gradient( #148bde, #1174b9);
+      &:active {
+        box-shadow: 1px 1px 10px black inset, 0 1px 0 rgba( 255, 255, 255, 0.4);
+      }
+      &.active{
+        background: linear-gradient( #19db7d, #11c06b);
+      }
+      &.false{
+        background: linear-gradient( #cd003a, #9b002c);
+      }
+    }
   }
 }
